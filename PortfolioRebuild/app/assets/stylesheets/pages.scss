@@ -1,3 +1,17 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.inline {
+	display:  -webkit-box;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#center {
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
