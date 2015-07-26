@@ -22,18 +22,30 @@
 
     </style>
 
-      <script>
+
+
+    <div id="map-canvas"></div>
+
+
+          <script>
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
 
-function initialize() {
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
+$(function(){
+
+   
+
   var myLatlng = new google.maps.LatLng(25.756518, -80.197996);
   var mapOptions = {
     zoom: 12,
     center: myLatlng
   };
 
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+ var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
   var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
@@ -59,9 +71,9 @@ function initialize() {
   google.maps.event.addListener(marker, 'click', function() {
     infowindow.open(map,marker);
   });
-}
+})
 
-google.maps.event.addDomListener(window, 'load', initialize);
+
 
 
 
@@ -69,7 +81,5 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
     </script>
-
-    <div id="map-canvas"></div>
   </body>
 </html>
