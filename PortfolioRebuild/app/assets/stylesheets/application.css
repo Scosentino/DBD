@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-body, html, main {
+body, html {
   height: 100%;
 }
 

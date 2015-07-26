@@ -17,9 +17,11 @@
 }
 
 #skill_holder {
-	
-	margin-bottom: 10%;
+
+	height:95%;
+
 }
+
 
 footer {
 	background-color: #eee;
@@ -36,6 +38,9 @@ footer {
 	height: 100%;
 }
 
+#homepage{
+	height:100%;
+}
 
 
 li {
@@ -50,12 +55,33 @@ li {
 	float:right;
 }
 
-#portfolio_highlight {
-	height: 500px;
+.jumbotron {
+	margin-top: 10%;
+}
+
+portfolio_highlight {
+	height: 1000px;
 	margin-top: 5%;
+
+
+	
 }
 
 .text-left {
 	text-align:left;
 }
+
+#first_piece_of_content {
+	height:100%;
+	background-color: teal;
+}
+
+#row_holder_for_skills {
+	margin-top: 20%
+}
+
+.border-bottom {
+	border-bottom:1px black solid;
+}
+
 
