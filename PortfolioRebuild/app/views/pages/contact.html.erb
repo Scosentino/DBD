@@ -4,7 +4,16 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Info windows</title>
-    <style>
+ 
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  
+  </head>
+
+
+  <body>
+
+
+   <style>
       html, body, #map-canvas {
         height: 100%;
         margin: 0;
@@ -12,8 +21,8 @@
       }
 
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-    <script>
+
+      <script>
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
 
@@ -60,8 +69,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
     </script>
-  </head>
-  <body>
+
     <div id="map-canvas"></div>
   </body>
 </html>
