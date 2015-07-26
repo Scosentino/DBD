@@ -24,16 +24,19 @@
 footer {
 	background-color: #eee;
 	border-radius: 6px;  
-	margin: 0 auto;
+	text-align: center;
+
+}
+
+#footer {
+	display: -webkit-box;
 }
 
 #height_100 {
 	height: 100%;
 }
 
-#foot {
-	margin-top: 5%;
-}
+
 
 li {
 	text-align: left;
