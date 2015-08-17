@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'users/new'
+
   root 'pages#homepage'
 
   get '/contact' => 'pages#contact'
@@ -8,6 +10,9 @@ Rails.application.routes.draw do
   get '/homepage' => 'pages#homepage'
 
   get 'portfolio' => 'pages#portfolio'
+
+
+  resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
