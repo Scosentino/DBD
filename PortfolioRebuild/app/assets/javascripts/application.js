@@ -15,6 +15,107 @@
 //= require turbolinks
 //= require_tree .
 
+function initMap() {
+  var uluru = {lat: 25.756518, lng: -80.197996};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: uluru
+  });
+
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Deep Blue Development</h1>'+
+      '<div id="bodyContent">'+
+      '<p><a href="http://www.linkedin.com/in/seanjcosentino">Linked In</a></p>'+
+      '<p><a href="/">Back Home</a></p>'+
+      '<a href="mailto:sparkcollaboration@gmail.com"><button class="btn btn-primary">Email Me</button></a>'+
+      '<a href="tel:305-744-4804"><button class="btn btn-primary">Call Me</button></a>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+    title: 'Uluru (Ayers Rock)'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+}
+
+
+
+
+// MAP
+
+//     function initialize() {
+
+
+
+//   var myLatlng = new google.maps.LatLng(25.756518, -80.197996);
+//   var mapOptions = {
+//     zoom: 12,
+//     center: myLatlng
+//   };
+
+//     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  // var contentString = '<div id="content">'+
+  //     '<div id="siteNotice">'+
+  //     '</div>'+
+  //     '<h1 id="firstHeading" class="firstHeading">Deep Blue Development</h1>'+
+  //     '<div id="bodyContent">'+
+  //     '<p><a href="http://www.linkedin.com/in/seanjcosentino">Linked In</a></p>'+
+  //     '<p><a href="/">Back Home</a></p>'+
+  //     '<a href="mailto:sparkcollaboration@gmail.com"><button class="btn btn-primary">Email Me</button></a>'+
+  //     '<a href="tel:305-744-4804"><button class="btn btn-primary">Call Me</button></a>'+
+  //     '</div>'+
+  //     '</div>';
+
+//   var infowindow = new google.maps.InfoWindow({
+//       content: contentString
+//   });
+
+//   var marker = new google.maps.Marker({
+//       position: myLatlng,
+//       map: map,
+//       title: 'Deep Blue Development'
+//   });
+
+//   google.maps.event.addListener(marker, 'click', function() {
+//     infowindow.open(map,marker);
+//   });
+
+
+// google.maps.event.addDomListener(window, 'load', initialize);
+// }
+
+// 
+//  __________ END MAP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
