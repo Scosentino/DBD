@@ -1,0 +1,15 @@
+<%= form_tag charges_path do %>
+  <article>
+    <h2>Secure Payment Processing Via Stripe</h2>
+    <br>
+    <h3>We never store your Credit Card or any other sensitive information and are 100% PCI compliant :)</h3>
+  </article>
+
+
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="500"
+          data-locale="auto"></script>
+<% end %>

@@ -17,7 +17,7 @@
 		<![endif]-->
 		<link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="container">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,7 +42,7 @@
             <li><a href="#">Develop An App</a></li>
             <li><a href="#">Consulting</a></li>
             <li><a href="/contact">Contact</a></li>
-
+            <li><a href="/charges/new">Pay</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Jobs</a></li>
           </ul>
@@ -52,8 +52,9 @@
   </div>
 </nav>
 
+<div class="body-down">
 <%= yield %>
-
+</div>
 
 <script src="js/bootstrap.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>

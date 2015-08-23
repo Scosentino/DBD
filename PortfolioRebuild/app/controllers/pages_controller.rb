@@ -7,6 +7,9 @@ class PagesController < ApplicationController
 
 	def portfolio
 	end
+
+	def pay
+	end
 	
 
 end
