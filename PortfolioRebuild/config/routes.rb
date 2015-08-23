@@ -11,7 +11,9 @@ Rails.application.routes.draw do
 
   get 'portfolio' => 'pages#portfolio'
 
+  # get '/pay' => 'pages#pay'
 
+  resources :charges
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
